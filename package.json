@@ -1,0 +1,28 @@
+{
+  "name": "docsify-ko-fi",
+  "version": "1.0.0",
+  "description": "A docsify.js plugin for rendering customized Ko-fi buttons from markdown",
+  "author": "Francesco Saverio Cannizzaro (fcannizzaro)",
+  "main": "dist/docsify-ko-fi.min.js",
+  "homepage": "https://fcannizzaro.github.io/docsify-ko-fi",
+  "repository": "github:fcannizzaro/docsify-ko-fi",
+  "scripts": {
+    "build": "npx uglifyjs src/docsify-ko-fi.js > dist/docsify-ko-fi.min.js && cssnano < src/docsify-ko-fi.css > dist/docsify-ko-fi.min.css"
+  },
+  "keywords": [
+    "ko-fi",
+    "docsify"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "uglify-js": "^3.14.5"
+  },
+  "files": [
+    "package.json",
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ]
+}
